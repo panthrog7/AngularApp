@@ -1,0 +1,46 @@
+<mat-card @fade class="example-card">
+  <mat-card-header class="row">
+    <h2>{{Title}} Employee</h2>
+  </mat-card-header>
+  <mat-card-content @fade #employee [formGroup]="empForm" class="form-control">
+    <div class="example-container">
+      <mat-form-field hintLabel="Min 7 characters - Max 20 characters">
+        <input matInput #input minlength="7" maxlength="20" formControlName="fullName"
+          placeholder="Enter employee Full Name" required>
+        <mat-hint align="end">{{input.value?.length || 0}}/20</mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div class="example-container">
+      <mat-form-field hintLabel="Enter an age between 18 and 100 years old">
+        <input matInput type="number" #input formControlName="age" placeholder="Enter employee Age" required>
+      </mat-form-field>
+    </div>
+
+    <div class="example-container">
+      <mat-form-field hintLabel="Max 8 characters">
+        <input matInput #input maxlength="8" formControlName="gender" placeholder="Enter employee Gender">
+        <mat-hint align="end">{{input.value?.length || 0}}/8</mat-hint>
+      </mat-form-field>
+    </div><br />
+
+    <div class="example-container">
+      <mat-radio-group *ngIf="value == true ?'positive' : 'negative'" formControlName="isActive"
+        aria-label="Select an option" required>
+        <h3>Is Active</h3>
+        <mat-radio-button [value]="true">Yes</mat-radio-button>
+        <mat-radio-button [value]="false">No</mat-radio-button>
+      </mat-radio-group>
+    </div><br />
+  </mat-card-content>
+
+  <mat-card-actions class="Buttons">
+    <button mat-flat-button color="primary" *ngIf="empForm.get('id').value == 0" [disabled]="!empForm.valid"
+      (click)="saveEmp()">Save</button>
+    <button mat-flat-button color="accent" *ngIf="empForm.get('id').value != 0" [disabled]="!empForm.valid"
+      (click)="updateEmp(empForm)">Update</button>
+    <button mat-flat-button color="warn" (click)="backToEmployees()">Back to Employees List</button>
+  </mat-card-actions>
+
+  <mat-spinner *ngIf="showSpinner"></mat-spinner>
+</mat-card>

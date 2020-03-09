@@ -1,0 +1,13 @@
+<div class="mainHeader">
+    <h1>Welcome to our {{ title }}</h1>
+</div>
+
+<h2 class="dateClass">Today is: {{now | date: 'medium' }}</h2>
+
+<div @fade style="background-color: #3f51b5">
+    <mat-progress-bar mode="buffer"></mat-progress-bar>
+
+    <img class="img-responsive" src="assets/images/Download.jpg" />
+
+    <mat-progress-bar mode="buffer"></mat-progress-bar>
+</div>

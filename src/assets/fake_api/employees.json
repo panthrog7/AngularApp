@@ -1,0 +1,88 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "fullName": "Annie Musterfrau",
+      "age": 27,
+      "gender": "female",
+      "isActive": true
+    },
+    {
+      "id": 2,
+      "fullName": "Patrik Mustermann",
+      "age": 32,
+      "gender": "male",
+      "isActive": true
+    },
+    {
+      "id": 3,
+      "fullName": "Maria Landers",
+      "age": 46,
+      "gender": "female",
+      "isActive": false
+    },
+    {
+      "id": 4,
+      "fullName": "John Antony",
+      "age": 71,
+      "gender": "male",
+      "isActive": false
+    },
+    {
+      "id": 5,
+      "fullName": "Nikolas Jonas",
+      "age": 42,
+      "gender": "male",
+      "isActive": true
+    },
+    {
+      "id": 6,
+      "fullName": "Panos Gianna",
+      "age": 40,
+      "gender": "male",
+      "isActive": true
+    },
+    {
+      "id": 7,
+      "fullName": "George Vargas",
+      "age": 49,
+      "gender": "male",
+      "isActive": false
+    },
+    {
+      "id": 8,
+      "fullName": "Lubomir Micic",
+      "age": 24,
+      "gender": "male",
+      "isActive": true
+    },
+    {
+      "id": 9,
+      "fullName": "Adam Markovic",
+      "age": 73,
+      "gender": "male",
+      "isActive": false
+    },
+    {
+      "id": 10,
+      "fullName": "Maria Kara",
+      "age": 53,
+      "gender": "female",
+      "isActive": true
+    },
+    {
+      "id": 11,
+      "fullName": "Ming Jao",
+      "age": 69,
+      "gender": "female",
+      "isActive": false
+    },
+    {
+      "id": 12,
+      "fullName": "Paklis Paklakis",
+      "age": 38,
+      "gender": "Male",
+      "isActive": true
+    }
+  ]
+}

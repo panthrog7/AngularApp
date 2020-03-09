@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-style: unset;
+}
+
+.nav-links {
+        margin-left: 30px;
+        word-spacing: 30px;
+}
+
+.headerleft {
+    display: flex;
+    align-items: center;
+}
+
+.login_register{
+    position: absolute; 
+    right: 0;
+}

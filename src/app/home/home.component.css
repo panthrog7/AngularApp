@@ -1,0 +1,23 @@
+.dateClass{
+
+    display: flex;
+    justify-content: center;
+    color: lightseagreen;
+    font-style: italic;
+}
+
+.mainHeader{
+
+    display: flex;
+    justify-content: center;
+    color: lightseagreen;
+    font-style: italic;
+}
+
+.img-responsive{
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
